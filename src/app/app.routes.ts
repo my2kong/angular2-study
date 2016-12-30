@@ -5,11 +5,16 @@ import { NoContentComponent } from './no-content';
 
 import { DataResolver } from './app.resolver';
 
+// hello
+import {HelloWorldComponent} from "./hello/hello.component";
+
+// Nested
+import {NestedParentComponent} from "./nested-component/parent.component";
+
 
 export const ROUTES: Routes = [
-  { path: '',      component: HomeComponent },
-  { path: 'home',  component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'detail', loadChildren: './+detail/index#DetailModule'},
+  { path: '',      component: HelloWorldComponent },
+  { path: 'hello', component: HelloWorldComponent },
+  { path: 'nested-component', component: NestedParentComponent },
   { path: '**',    component: NoContentComponent },
 ];
