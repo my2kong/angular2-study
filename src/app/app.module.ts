@@ -29,6 +29,7 @@ import {AppParentToChildInputsComponent} from "./parent-to-child-input/app-paren
 import {ChildInputsComponent} from "./parent-to-child-input/child-inputs.component";
 import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
 import {ChildComponent} from "./child-to-parent/child.component";
+import {ViewChildComponent, ItemComponent, Item} from "./viewchild/viewchild.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -63,7 +64,10 @@ type StoreType = {
         ChildInputComponent,
         ChildInputsComponent,
         ChildToParentComponent,
-        ChildComponent
+        ChildComponent,
+        ViewChildComponent,
+        ItemComponent,
+        Item
     ],
     imports: [ // import Angular's modules
         BrowserModule,
