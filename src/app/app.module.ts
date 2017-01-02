@@ -32,6 +32,7 @@ import {ChildComponent} from "./child-to-parent/child.component";
 import {ViewChildComponent, ItemComponent, Item} from "./viewchild/viewchild.component";
 import {ViewChildrenComponent, ChildCmp} from "./viewchild/viewchildren.component";
 import {ContentChildComp, ButtonGroup, GroupTitle, ChildButtonCmp} from "./viewchild/contentchild.component";
+import {ContentChildrenComp, WordGroup, Word} from "./viewchild/contentchildren.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -75,7 +76,10 @@ type StoreType = {
         ContentChildComp,
         ButtonGroup,
         ChildButtonCmp,
-        GroupTitle
+        GroupTitle,
+        ContentChildrenComp,
+        WordGroup,
+        Word
     ],
     imports: [ // import Angular's modules
         BrowserModule,

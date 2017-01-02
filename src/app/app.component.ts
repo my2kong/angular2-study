@@ -64,6 +64,12 @@ import { AppState } from './app.service';
           contentchild-component
         </a>
       </span>
+      |
+      <span>
+        <a [routerLink]=" ['./contentchildren-component'] ">
+          contentchild-component
+        </a>
+      </span>
     </nav>
 
     <main>

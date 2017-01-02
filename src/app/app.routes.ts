@@ -11,10 +11,8 @@ import {HelloWorldComponent} from "./hello/hello.component";
 // Nested
 import {NestedParentComponent} from "./nested-component/parent.component";
 
-// output
+// Input/output
 import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
-
-// Input
 import {ParentToChildInputComponent} from "./parent-to-child-input/parent-to-child-input.compontent";
 import {AppParentToChildInputsComponent} from "./parent-to-child-input/app-parent-to-child-inputs.compontent";
 
@@ -24,6 +22,7 @@ import {ViewChildrenComponent} from "./viewchild/viewchildren.component";
 
 // ContentChild
 import {ContentChildComp} from "./viewchild/contentchild.component";
+import {ContentChildrenComp} from "./viewchild/contentchildren.component";
 
 export const ROUTES: Routes = [
   { path: '',      component: HelloWorldComponent },
@@ -35,5 +34,6 @@ export const ROUTES: Routes = [
   { path: 'viewchild-component', component: ViewChildComponent },
   { path: 'viewchildren-component', component: ViewChildrenComponent },
   { path: 'contentchild-component', component: ContentChildComp },
+  { path: 'contentchildren-component', component: ContentChildrenComp },
   { path: '**',    component: NoContentComponent },
 ];
