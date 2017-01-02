@@ -16,6 +16,8 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
+    <!-- Component -->
+    <!--
     <nav>
       <span>
         <a [routerLink]=" ['./hello'] ">
@@ -68,6 +70,15 @@ import { AppState } from './app.service';
       <span>
         <a [routerLink]=" ['./contentchildren-component'] ">
           contentchild-component
+        </a>
+      </span>
+    </nav>
+    -->
+    
+    <nav>
+      <span>
+        <a [routerLink]=" ['./hello-service'] ">
+          hello-service
         </a>
       </span>
     </nav>

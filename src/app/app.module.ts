@@ -33,6 +33,8 @@ import {ViewChildComponent, ItemComponent, Item} from "./viewchild/viewchild.com
 import {ViewChildrenComponent, ChildCmp} from "./viewchild/viewchildren.component";
 import {ContentChildComp, ButtonGroup, GroupTitle, ChildButtonCmp} from "./viewchild/contentchild.component";
 import {ContentChildrenComp, WordGroup, Word} from "./viewchild/contentchildren.component";
+import {HelloService} from "./hello-service/hello.service";
+import {HelloComponent} from "./hello-service/hello.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -79,7 +81,8 @@ type StoreType = {
         GroupTitle,
         ContentChildrenComp,
         WordGroup,
-        Word
+        Word,
+        HelloComponent
     ],
     imports: [ // import Angular's modules
         BrowserModule,
@@ -89,7 +92,8 @@ type StoreType = {
     ],
     providers: [ // expose our Services and Providers into Angular's dependency injection
         ENV_PROVIDERS,
-        APP_PROVIDERS
+        APP_PROVIDERS,
+        HelloService
     ]
 })
 export class AppModule {

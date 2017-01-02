@@ -5,6 +5,7 @@ import { NoContentComponent } from './no-content';
 
 import { DataResolver } from './app.resolver';
 
+// Component
 // hello
 import {HelloWorldComponent} from "./hello/hello.component";
 
@@ -24,7 +25,12 @@ import {ViewChildrenComponent} from "./viewchild/viewchildren.component";
 import {ContentChildComp} from "./viewchild/contentchild.component";
 import {ContentChildrenComp} from "./viewchild/contentchildren.component";
 
+// Service
+// Hello Service
+import {HelloComponent} from "./hello-service/hello.component";
+
 export const ROUTES: Routes = [
+    /*
   { path: '',      component: HelloWorldComponent },
   { path: 'hello', component: HelloWorldComponent },
   { path: 'nested-component', component: NestedParentComponent },
@@ -35,5 +41,8 @@ export const ROUTES: Routes = [
   { path: 'viewchildren-component', component: ViewChildrenComponent },
   { path: 'contentchild-component', component: ContentChildComp },
   { path: 'contentchildren-component', component: ContentChildrenComp },
+    */
+  { path: '', component: HelloComponent },
+  { path: 'hello-service', component: HelloComponent },
   { path: '**',    component: NoContentComponent },
 ];
