@@ -28,6 +28,24 @@ import { AppState } from './app.service';
           nested
         </a>
       </span>
+      |
+      <span>
+        <a [routerLink]=" ['./parent-to-child-input-component'] ">
+          parent-to-child-input
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./app-parent-to-child-inputs-component'] ">
+          app-parent-to-child-inputs
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./child-to-parent-component'] ">
+          child-output
+        </a>
+      </span>
     </nav>
 
     <main>

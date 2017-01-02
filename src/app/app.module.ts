@@ -23,6 +23,12 @@ import {HelloWorldComponent} from "./hello/hello.component";
 import {NestedParentComponent} from "./nested-component/parent.component";
 import {NestedChildComponent} from "./nested-component/child.component";
 import {NestedGrandsonComponent} from "./nested-component/grandson.component";
+import {ParentToChildInputComponent} from "./parent-to-child-input/parent-to-child-input.compontent";
+import {ChildInputComponent} from "./parent-to-child-input/child-input.component";
+import {AppParentToChildInputsComponent} from "./parent-to-child-input/app-parent-to-child-inputs.compontent";
+import {ChildInputsComponent} from "./parent-to-child-input/child-inputs.component";
+import {ChildToParentComponent} from "./child-to-parent/child-to-parent.component";
+import {ChildComponent} from "./child-to-parent/child.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -51,7 +57,13 @@ type StoreType = {
         // nested
         NestedParentComponent,
         NestedChildComponent,
-        NestedGrandsonComponent
+        NestedGrandsonComponent,
+        ParentToChildInputComponent,
+        AppParentToChildInputsComponent,
+        ChildInputComponent,
+        ChildInputsComponent,
+        ChildToParentComponent,
+        ChildComponent
     ],
     imports: [ // import Angular's modules
         BrowserModule,
