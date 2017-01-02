@@ -29,6 +29,7 @@ import {ContentChildrenComp} from "./viewchild/contentchildren.component";
 // Hello Service
 import {HelloComponent} from "./hello-service/hello.component";
 import {OopComponent} from "./oop-service/oop.component";
+import {MockComponent} from "./mock/mock.component";
 
 export const ROUTES: Routes = [
     /*
@@ -46,5 +47,6 @@ export const ROUTES: Routes = [
   { path: '', component: HelloComponent },
   { path: 'hello-service', component: HelloComponent },
   { path: 'oop-coponent', component: OopComponent },
+  { path: 'mock-coponent', component: MockComponent },
   { path: '**',    component: NoContentComponent },
 ];

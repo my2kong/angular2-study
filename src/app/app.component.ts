@@ -87,6 +87,12 @@ import { AppState } from './app.service';
           oop-coponent
         </a>
       </span>
+      |
+      <span>
+        <a [routerLink]=" ['./mock-coponent'] ">
+          mock-coponent
+        </a>
+      </span>
     </nav>
 
     <main>

@@ -38,6 +38,9 @@ import {HelloComponent} from "./hello-service/hello.component";
 import {SecondChild} from "./import-service/parent.service";
 import {Parent} from "./oop-service/parent.service";
 import {OopComponent} from "./oop-service/oop.component";
+import {User} from "./mock/user";
+import {MockService} from "./mock/mock.service";
+import {MockComponent} from "./mock/mock.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -86,7 +89,8 @@ type StoreType = {
         WordGroup,
         Word,
         HelloComponent,
-        OopComponent
+        OopComponent,
+        MockComponent
     ],
     imports: [ // import Angular's modules
         BrowserModule,
@@ -99,7 +103,9 @@ type StoreType = {
         APP_PROVIDERS,
         HelloService,
         SecondChild,
-        Parent
+        Parent,
+        User,
+        MockService
     ]
 })
 export class AppModule {
