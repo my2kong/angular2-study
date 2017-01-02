@@ -81,6 +81,12 @@ import { AppState } from './app.service';
           hello-service
         </a>
       </span>
+      |
+      <span>
+        <a [routerLink]=" ['./oop-coponent'] ">
+          oop-coponent
+        </a>
+      </span>
     </nav>
 
     <main>
