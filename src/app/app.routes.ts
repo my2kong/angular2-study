@@ -20,6 +20,10 @@ import {AppParentToChildInputsComponent} from "./parent-to-child-input/app-paren
 
 // Viewchild
 import {ViewChildComponent} from "./viewchild/viewchild.component";
+import {ViewChildrenComponent} from "./viewchild/viewchildren.component";
+
+// ContentChild
+import {ContentChildComp} from "./viewchild/contentchild.component";
 
 export const ROUTES: Routes = [
   { path: '',      component: HelloWorldComponent },
@@ -29,5 +33,7 @@ export const ROUTES: Routes = [
   { path: 'app-parent-to-child-inputs-component', component: AppParentToChildInputsComponent },
   { path: 'child-to-parent-component', component: ChildToParentComponent },
   { path: 'viewchild-component', component: ViewChildComponent },
+  { path: 'viewchildren-component', component: ViewChildrenComponent },
+  { path: 'contentchild-component', component: ContentChildComp },
   { path: '**',    component: NoContentComponent },
 ];
