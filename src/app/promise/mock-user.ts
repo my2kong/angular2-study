@@ -1,16 +1,16 @@
 import {User} from './user';
 
-export var USER: User[] = [
+export var USERS : User[] = [
     {
-        name: '유비',
+        name: '조조',
         id: '1'
     },
     {
-        name: '관우',
+        name: '하우돈',
         id: '2'
     },
     {
-        name: '장비',
+        name: '허저',
         id: '3'
-    },
+    }
 ];

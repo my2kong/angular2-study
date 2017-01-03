@@ -39,8 +39,10 @@ import {SecondChild} from "./import-service/parent.service";
 import {Parent} from "./oop-service/parent.service";
 import {OopComponent} from "./oop-service/oop.component";
 import {User} from "./mock/user";
-import {MockService} from "./mock/mock.service";
 import {MockComponent} from "./mock/mock.component";
+import {PromiseModule} from "./promise/promise.module";
+import {ListComponent} from "./promise/list.component";
+import {PromiseComponent} from "./promise/promise.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -54,45 +56,15 @@ type StoreType = {
     disposeOldHosts: () => void
 };
 
-/**
-* `AppModule` is the main entry point into Angular2's bootstraping process
-*/
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
         NoContentComponent,
-
-        // hello
-        HelloWorldComponent,
-
-        // nested
-        NestedParentComponent,
-        NestedChildComponent,
-        NestedGrandsonComponent,
-        ParentToChildInputComponent,
-        AppParentToChildInputsComponent,
-        ChildInputComponent,
-        ChildInputsComponent,
-        ChildToParentComponent,
-        ChildComponent,
-        ViewChildComponent,
-        ItemComponent,
-        Item,
-        ViewChildrenComponent,
-        ChildCmp,
-        ContentChildComp,
-        ButtonGroup,
-        ChildButtonCmp,
-        GroupTitle,
-        ContentChildrenComp,
-        WordGroup,
-        Word,
-        HelloComponent,
-        OopComponent,
-        MockComponent
+        ListComponent,
+        PromiseComponent
     ],
-    imports: [ // import Angular's modules
+    imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
@@ -100,12 +72,7 @@ type StoreType = {
     ],
     providers: [ // expose our Services and Providers into Angular's dependency injection
         ENV_PROVIDERS,
-        APP_PROVIDERS,
-        HelloService,
-        SecondChild,
-        Parent,
-        User,
-        MockService
+        APP_PROVIDERS
     ]
 })
 export class AppModule {

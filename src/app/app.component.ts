@@ -16,81 +16,10 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
-    <!-- Component -->
-    <!--
     <nav>
       <span>
-        <a [routerLink]=" ['./hello'] ">
-          Hello
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./nested-component'] ">
-          nested
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./parent-to-child-input-component'] ">
-          parent-to-child-input
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./app-parent-to-child-inputs-component'] ">
-          app-parent-to-child-inputs
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./child-to-parent-component'] ">
-          child-output
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./viewchild-component'] ">
-          viewchild-component
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./viewchildren-component'] ">
-          viewchildren-component
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./contentchild-component'] ">
-          contentchild-component
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./contentchildren-component'] ">
-          contentchild-component
-        </a>
-      </span>
-    </nav>
-    -->
-    
-    <nav>
-      <span>
-        <a [routerLink]=" ['./hello-service'] ">
-          hello-service
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./oop-coponent'] ">
-          oop-coponent
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./mock-coponent'] ">
-          mock-coponent
+        <a [routerLink]=" ['./promise-component'] ">
+          promise-component
         </a>
       </span>
     </nav>
