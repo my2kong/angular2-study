@@ -10,7 +10,4 @@ import {SharedService} from "./shared.service";
 export class TaxiComponent {
     constructor(public s: SharedService) {
     }
-
-    ngOnInit() {
-    }
 }
