@@ -7,9 +7,10 @@ import { DataResolver } from './app.resolver';
 
 // Component
 import {PromiseComponent} from "./promise/promise.component";
+import {ParentComponent} from "./shared-service/parent.component";
 
 export const ROUTES: Routes = [
-  { path: '', component: PromiseComponent },
-  { path: 'promise-component', component: PromiseComponent },
+  { path: '', component: ParentComponent },
+  { path: 'parent-component', component: ParentComponent },
   { path: '**',    component: NoContentComponent },
 ];

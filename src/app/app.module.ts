@@ -43,6 +43,9 @@ import {MockComponent} from "./mock/mock.component";
 import {PromiseModule} from "./promise/promise.module";
 import {ListComponent} from "./promise/list.component";
 import {PromiseComponent} from "./promise/promise.component";
+import {ParentComponent} from "./shared-service/parent.component";
+import {CarComponent} from "./shared-service/car.component";
+import {TaxiComponent} from "./shared-service/taxi.component";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -62,7 +65,10 @@ type StoreType = {
         AppComponent,
         NoContentComponent,
         ListComponent,
-        PromiseComponent
+        ParentComponent,
+        CarComponent,
+        TaxiComponent,
+        CarComponent
     ],
     imports: [
         BrowserModule,

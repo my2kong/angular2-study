@@ -18,8 +18,8 @@ import { AppState } from './app.service';
   template: `
     <nav>
       <span>
-        <a [routerLink]=" ['./promise-component'] ">
-          promise-component
+        <a [routerLink]=" ['./parent-component'] ">
+          parent-component
         </a>
       </span>
     </nav>
