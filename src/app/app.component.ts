@@ -27,7 +27,12 @@ import { AppState } from './app.service';
     <main>
       <router-outlet></router-outlet>
     </main>
-  `
+  `,
+  styles: [`
+    nav {
+      margin-bottom: 10px;
+    }
+  `]
 })
 export class AppComponent {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

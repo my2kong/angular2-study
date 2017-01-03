@@ -70,7 +70,7 @@ type StoreType = {
         HttpModule,
         RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
     ],
-    providers: [ // expose our Services and Providers into Angular's dependency injection
+    providers: [
         ENV_PROVIDERS,
         APP_PROVIDERS
     ]

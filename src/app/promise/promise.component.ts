@@ -5,8 +5,8 @@ import {MockService} from "./mock.service";
 @Component({
     selector: 'promise',
     template: `
-        {{reqMessage}}<br>
-        {{reqMessage2}}<br><br>
+        {{reqMessasge}}<br>
+        {{reqMessasge2}}<br><br>
         <list-component [list]="listUser" [title]="'이름 출력 (지연없음)'"></list-component>
         <list-component [list]="listUserDelay" [title]="'이름 출력 (1초 지연)'"></list-component>
     `,
